@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Nyayjyoti Portal - Discuss Your Doubt</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Nyayjyoti Portal - Discuss Your Doubt</h1>
+    </header>
+
+    <section class="add-message">
+        <h2>Ask your Doubt Here</h2>
+        <form id="message-form">
+            <label for="category">Category:</label>
+            <select id="category" required>
+                <option value="legal">Legal</option>
+                <option value="rights">Rights</option>
+                <option value="government">Government</option>
+                <option value="finance">Finance</option>
+                <option value="education">Education</option>
+                <!-- Add more categories as needed -->
+            </select>
+            <textarea id="message" placeholder="Your message..." required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section class="sample-answers">
+        <h2>Answered Questions</h2>
+        <label for="sample-category-filter">Select Category:</label>
+        <select id="sample-category-filter">
+            <option value="all">All</option>
+            <option value="legal">Legal</option>
+            <option value="rights">Rights</option>
+            <option value="government">Government</option>
+            <option value="finance">Finance</option>
+            <option value="education">Education</option>
+            <!-- Add more categories as needed -->
+        </select>
+        <div id="sample-answer-list"></div>
+    </section>
+    <div id="google_translate_element"></div>
+    <!-- Modal Popup HTML -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Our team will respond shortly</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en',
+                    layout: google.translate.TranslateElement.InlineLayout,
+                    // gaTrack: false,
+                    // autoDisplay: false,
+                    translateText: 'Select Language'
+                },
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

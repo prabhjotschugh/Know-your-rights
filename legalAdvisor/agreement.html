@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            background-color: #ddd;
+            border: 1px solid #333;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 18px;
+        }
+
+        .tab:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        .tab.active {
+            background-color: #333;
+            color: white;
+        }
+
+        .tab-content {
+            display: none;
+            margin: 20px;
+            font-size: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #333;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .download-link {
+            margin-top: 10px;
+            display: block;
+            font-size: 18px;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabs">
+        <div class="tab" onclick="showTab('business-contracts')">Business Contracts</div>
+        <div class="tab" onclick="showTab('rental-agreement')">Rental Agreement</div>
+        <div class="tab" onclick="showTab('employment-agreements')">Employment Agreements</div>
+        <div class="tab" onclick="showTab('service-agreement')">Service Agreement</div>
+        <div class="tab" onclick="showTab('loan-agreement')">Loan Agreement</div>
+        <div class="tab" onclick="showTab('lease-agreements')">Lease Agreements</div>
+    </div>
+
+    <div class="tab-content" id="business-contracts">
+        <!-- Content for Business Contracts Agreement -->
+        <p><strong>Description:</strong> Business contracts are legally binding agreements between two or more parties, outlining the terms and conditions of a business arrangement.</p>
+
+        <p><strong>How to Obtain:</strong> Business contracts can be drafted by legal professionals or customized for specific needs. You may need to provide information about the parties involved, the scope of the agreement, and any specific terms you wish to include.</p>
+        <a href="business-contracts-download.html" class="download-link">Download Document</a>
+    </div>
+    <div class="tab-content" id="rental-agreement">
+        <!-- Content for Rental Agreement -->
+        <p><strong>Description:</strong>Rental agreements, also known as leases, define the terms of a rental property arrangement between landlords and tenants</p>
+
+<p><strong>How to Obtain:</strong> Rental agreements are often provided by landlords or property management companies. You may need to provide personal information, rental terms, and the property address</p>
+
+        <a href="rental-agreement-download.html" class="download-link">Download Document</a>
+    </div>
+    <div class="tab-content" id="employment-agreements">
+        <!-- Content for Employment Agreements -->
+        <p><strong>Description:</strong> Employment agreements outline the terms of employment, including job roles, responsibilities, compensation, and benefits.</p>
+
+<p><strong>How to Obtain:</strong> : Employment agreements are typically provided by employers when offering employment. You may need to provide personal information, job details, and compensation preferences.</p>
+
+        <a href="employment-agreements-download.html" class="download-link">Download Document</a>
+    </div>
+    <div class="tab-content" id="service-agreement">
+        <!-- Content for Service Agreement -->
+        <p><strong>Description:</strong> Service agreements define the terms of services provided by one party to another, including service scope, payment, and responsibilities.</p>
+
+<p><strong>How to Obtain:</strong> : Service agreements can be created by individuals or businesses with legal consultation. You may need to provide details about the services offered, payment terms, and any specific clauses you want to include.</p>
+
+        <a href="service-agreement-download.html" class="download-link">Download Document</a>
+    </div>
+    <div class="tab-content" id="loan-agreement">
+        <!-- Content for Loan Agreement -->
+        <p><strong>Description:</strong> : Loan agreements specify the terms of a loan, including repayment terms, interest rates, and collateral if applicable</p>
+        <p><strong>How to Obtain:</strong> : Financial institutions provide loan agreements when lending money. You may need to provide financial information, loan amount, repayment schedule, and collateral details.</p>
+
+        <a href="loan-agreement-download.html" class="download-link">Download Document</a>
+    </div>
+    <div class="tab-content" id="lease-agreements">
+        <!-- Content for Lease Agreements -->
+        <p><strong>Description:</strong> : Lease agreements govern the renting of real estate properties, such as apartments or houses</p>
+
+<p><strong>How to Obtain:</strong> Landlords typically provide lease agreements. You may need to provide personal information, rental terms, and property details.</p>
+
+        <a href="lease-agreements-download.html" class="download-link">Download Document</a>
+    </div>
+
+    <script>
+        function showTab(tabId) {
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            const selectedTab = document.querySelector(`#${tabId}`);
+            selectedTab.classList.add('active');
+
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            const selectedContent = document.getElementById(tabId);
+            selectedContent.classList.add('active');
+        }
+    </script>
+</body>
+</html>

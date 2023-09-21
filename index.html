@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="static/main.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,as,bn,gu,hi,kn,ml,mr,ne,or,pa,sa,ta,te,ur,bho,mai,kok,sd,npi,ks,sat,li',
+                    layout: google.translate.TranslateElement.InlineLayout,
+                    disableAutoTranslation: true, // Disable automatic translation
+                    multilanguagePage: true, // Allow users to select language
+                    translateText: 'Select Language' // Customize the search bar text
+                },
+                'google_translate_element'
+            );
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+
+<body class="bg-[#F8F8F8]">
+
+    <header
+        class=" min-h-[70px] z-[999] fixed top-0 left-0 w-full flex justify-between items-center pt-[6px] pb-[6px] pl-[50px] pr-[10px] sxl:pt-[10px] sxl:pb-[10px] sxl:pl-[100px] sxl:pr-[50px] bg-[#3b352f]-200 text-white bg-[#3b352f]">
+        <a href="#" class="Nyay font-bold text-3xl ">Nyay Jyoti</a>
+        <div class="navigation relative">
+            <div class="navigation-items flex">
+                <a href="#"
+                    class=" flex items-center relative text-white text-[1em] font-[500] no-underline ml-[30px]">About</a>
+                <a href="lawmadeeasy2/index.html"
+                    class=" flex items-center relative text-white text-[1em] font-[500] no-underline ml-[30px]">Law
+                    Made
+                    Easy</a>
+                <a href="legalAid2/index.html"
+                    class=" flex items-center relative text-white text-[1em] font-[500] no-underline ml-[30px]">Legal
+                    Aid</a>
+
+                <form class="ml-[30px]">
+                    <label for="default-search"
+                        class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg>
+                        </div>
+                        <input type="search" id="default-search"
+                            class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-[50px] focus:ring-blue-500 focus:border-blue-500  "
+                            placeholder="Search..." required>
+                    </div>
+                </form>
+                <a href="#" class=" flex items-center relative text-white text-[1em] font-[500] no-underline ml-[30px]">
+                    <!-- <img
+                        src="static/lang.png" alt="Lang" class="max-w-[2rem]"> -->
+                    <div id="google_translate_element" class="ml-auto"></div>
+                </a>
+                <a href="#"
+                    class=" acc flex items-center relative text-black text-[1em] font-[500] no-underline ml-[30px]  rounded-[20px] pl-2 pr-2"><img
+                        src="static/account.png" alt="Acc" class="w-[2rem]">
+                    <h3 class="text-white capitalize">harsh</h3>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section
+        class="home pt-[100px] pb-[100px] pl-[20px] pr-[20px] sxl:pl-[150px] sxl:pr-[150px] w-full relative min-h-[100vh] flex justify-center flex-col bg-gray-200">
+        <video class="video-slide z-0 absolute top-0 left-0 w-full h-full object-cover active" src="static/3.mp4"
+            autoplay muted loop></video>
+        <div class="content z-[888] font-[600] w-[70%] mt-[50px]">
+            <h1 class="text-[2.5em] font-[900] leading-[75px] tracking-[5px] text-[#FEA403] mb-[40px]">EMPOWERING BHARAT
+                WITH LEGAL WISDOM
+            </h1>
+            <!-- <p class="mb-[65px] text-white">
+                Cultivate a deeper
+                understanding
+                of your legal
+                rights
+                and responsibilities with Nyay
+                Jyoti—a
+                comprehensive guide to India's legal landscape, ensuring informed citizenship and a more just society.
+            </p> -->
+        </div>
+    </section>
+    <section class="features">
+        <h2 class="font-bold text-4xl">Our Features and Services</h2>
+        <div class="card-container">
+            <div class="service-card">
+                <img src="static/c1.jpg" alt="Service 1">
+                <h3>Law Made Easy</h3>
+                <p>Unlock the power of legal knowledge with Law Made Easy. We break down complex rights into simple,
+                    real-world explanations, empowering you to understand and assert your rights effortlessly.</p>
+                <a href="lawmadeeasy2/index.html" class="btn">Explore</a>
+            </div>
+            <div class="service-card">
+                <img src="static/c2.png" alt="Service 2">
+                <h3>Legal Aid</h3>
+                <p>Introducing Legal Aid: Your trusted legal ally. Connect with experienced law professionals for
+                    personalized advice and solutions to your legal concerns, putting the power of justice back in your
+                    hands.</p>
+                <a href="legalAid2/index.html" class="btn">Explore</a>
+            </div>
+            <div class="service-card">
+                <img src="static/c3.png" alt="Service 3">
+                <h3>Complaint Guide</h3>
+                <p>Simplify complaint filing with Complaint Guide. Access user-friendly guides for various complaint
+                    types, ensuring a streamlined process to address your concerns.</p>
+                <a href="./complaint guide/index1.html" class="btn">Explore</a>
+            </div>
+            <div class="service-card">
+                <img src="static/c4.png" alt="Service 4">
+                <h3>Document Advisor</h3>
+                <p>Simplify document preparation with Document Advisor. Access clear guides for complaint filings and
+                    legal document applications, ensuring you have the right paperwork at your fingertips.</p>
+                <a href="legalAdvisor/index2.html" class="btn">Explore</a>
+            </div>
+            <div class="service-card">
+                <img src="static/c5.png" alt="Service 5">
+                <h3>Legal Learning</h3>
+                <p>Elevate your legal expertise with our tailored learning resources, perfect for both aspiring and
+                    experienced legal professionals looking to enhance their skills significantly.</p>
+                <a href="legalLearning2/LegalLearing.html" class="btn">Explore</a>
+            </div>
+            <div class="service-card">
+                <img src="static/c6.png" alt="Service 6">
+                <h3>Discuss Your Doubts</h3>
+                <p>Discover a supportive legal community at Discussion Forum. Engage in discussions, share experiences,
+                    and find insights on diverse legal matters. Your platform for open, confidential conversations
+                    awaits.</p>
+                <a href="discussYourdouts2/discuss.html" class="btn">Explore</a>
+            </div>
+        </div>
+        <h2 class="legalHelp text-4xl mb-10">Legal help for every part of your life</h2>
+        <section class="section">
+            <div class="section-img-1" style="text-align: center;">
+                <img src="static/Family (1).png" alt="family" class="max-w-[600px] h-auto">
+            </div>
+            <div class="section-text h-[65%] flex flex-col gap-3   ">
+                <h3>For you and your Family</h3>
+                <p class="text-gray-800">Exploring the Heart of Indian Society: Family Laws in India. Uncover Rights,
+                    Duties, and Legal
+                    Insights Governing Family Life.</p>
+                <div class="section-buttons mt-6">
+                    <a href="./lawmadeeasy2/index.html" class="btn">Explore</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-text h-[65%] flex flex-col gap-3  ">
+                <h3>Criminal Laws Unveiled</h3>
+                <p>Dive into the World of Criminal Laws in India: A Comprehensive Guide to Legal Codes, Procedures, and
+                    Justice. Unravel the Intricacies of the Legal System and Know Your Rights.</p>
+                <div class="section-buttons">
+                    <a href="./lawmadeeasy2/index.html" class="btn">Explore</a>
+                </div>
+            </div>
+            <div class="section-img-1" style="text-align: center;">
+                <img src="static/Family (2).png" alt="family">
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-img-1" style="text-align: center;">
+                <img src="static/Traffic.png" alt="family">
+            </div>
+            <div class="section-text h-[65%] flex flex-col gap-3  ">
+                <h3>Demystifying India's Traffic Laws</h3>
+                <p>Unlocking India's Traffic Laws: Road Safety and Legal Know-How at Your Fingertips. Master the Rules
+                    of the Road for Safer Journeys.</p>
+                <div class="section-buttons">
+                    <a href="./lawmadeeasy2/index.html" class="btn">Explore</a>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="carousel-container">
+        <br>
+        <br>
+        <h2 class="text-4xl font-bold text-[#333] text-center mt-18 mb-12 ">Know Your Fundamental Rights</h2>
+        <iframe width="70%" height="500" src="https://www.youtube.com/embed/7jG6G-kIzD4?si=vfKdCsO3vP2hOTvC"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen class="m-auto"></iframe>
+        <!-- <iframe width="70%" height="500" src="https://youtu.be/7jG6G-kIzD4?si=vfKdCsO3vP2hOTvC" class="m-auto"></iframe> -->
+    </div>
+    <section class="FAQ">
+        <h2 class="title">Frequently Asked Questions</h2>
+        <div class="faq">
+            <div class="question">
+                <h3>What is Nyay Jyoti?</h3>
+
+                <svg width="25" height="15" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="answer">
+                <p>
+                    Nyay Jyoti is an innovative platform dedicated to enhancing legal
+                    awareness and access to justice in India. It provides a wide range
+                    of legal information, guidance, and support to individuals from all
+                    walks of life.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                <h3>Is Nyay Jyoti available in multiple languages?
+                </h3>
+
+                <svg width="25" height="15" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="answer">
+                <p>
+                    Yes, Nyay Jyoti is available in several regional languages to ensure
+                    that people across India can access legal information and support in
+                    a language they are comfortable with.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                <h3>Can I collaborate with legal aid providers through Nyay Jyoti?
+                </h3>
+
+                <svg width="25" height="15" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="answer">
+                <p>
+                    Absolutely. Nyay Jyoti provides resources and information on how to collaborate with legal aid
+                    providers, ensuring you can seek legal assistance when needed.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                <h3>
+                    How do I stay updated with the latest legal information on Nyay Jyoti?
+                </h3>
+
+                <svg width="25" height="15" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="answer">
+                <p>
+                    Nyay Jyoti's platform includes features to help you stay informed about legal updates. You can
+                    subscribe to newsletters, follow our social media channels, or check for notifications within the
+                    app or website.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                <h3>Can I trust the legal information provided on Nyay Jyoti?</h3>
+
+                <svg width="25" height="15" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="answer">
+                <p>
+                    Nyay Jyoti strives to provide accurate and reliable legal information. We collaborate with legal
+                    experts and organizations to ensure the quality of our content. However, it's essential to verify
+                    information with a legal professional for your specific situation.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                <h3>Who can benefit from Nyay Jyoti?</h3>
+
+                <svg width="25" height="15" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="answer">
+                <p>
+                    Nyay Jyoti is designed to benefit every individual in India, regardless of their background or
+                    literacy level. Whether you're a student, a worker, a senior citizen, or from a marginalized
+                    community, Nyay Jyoti is here to empower you with legal knowledge.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="py-4 bg-[#3b352f] xl:pt-10">
+        <div class="w-full px-4 mx-auto max-w-8xl">
+            <div class="grid gap-12 xl:grid-cols-3 xl:gap-24 lg:w-[80%] w-full my-auto">
+                <div class="col-span-1 ml-12">
+                    <a href="#" class="flex mb-5">
+                        <span class="self-center text-2xl text-white font-semibold whitespace-nowrap ">Nyay
+                            Jyoti</span>
+                    </a>
+                    <p class="max-w-lg mb-3 text-white text-sm">"Nyay Jyoti: Your Legal Enlightenment"
+
+                        "Nyay Jyoti is your trusted companion in understanding and asserting your legal rights. Explore,
+                        learn, and protect with us, as we light the path to legal empowerment. Together, we illuminate a
+                        future where knowledge is power, and justice prevails."</p>
+                </div>
+
+                <!-- <div class="p-4 mt-0 mb-0 my-8  bg-[#3b352f] border-white rounded-lg shadow-md sm:p-6 lg:p-8 dark:bg-white-800 dark:border-gray-700 col-span-2"
+                    aria-label="Subscribe to the Flowbite newsletter">
+                    <h3 class="mb-3 text-xl font-medium text-gray-900 dark:text-white">Get more updates...</h3>
+                    <p class="mb-5 text-sm font-medium text-gray-500 dark:text-gray-300">Do you want to get notified
+                        when a new
+                        component is added to NyayJyoti? Sign up for our Updates and you'll be among the first to -->
+                <div class="p-4 mt-0 mb-0 my-8 bg-[#3b352f] border-white rounded-lg shadow-md sm:p-6 lg:p-8 dark:bg-white-800 dark:border-gray-700 col-span-2"
+                    aria-label="Subscribe to the Flowbite newsletter">
+                    <h3 class="mb-3 text-xl font-medium text-gray-900 dark:text-white">Get more updates...</h3>
+                    <p class="mb-5 text-sm font-medium text-gray-500 dark:text-gray-300">Do you want to get notified
+                        when a new component is added to NyayJyoti? Sign up for our Updates and you'll be among the
+                        first to
+                        find out about
+                        new features, components, versions, and tools.</p>
+                    <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+                    <form action="https://app.convertkit.com/forms/4692392/subscriptions" class="seva-form formkit-form"
+                        method="post" data-sv-form="4692392" data-uid="344e3b5c48" data-format="inline" data-version="5"
+                        data-options='{"settings":{"after_subscribe":{"action":"message","success_message":"Success! Now check your email to confirm your subscription.","redirect_url":""},"analytics":{"google":null,"fathom":null,"facebook":null,"segment":null,"pinterest":null,"sparkloop":null,"googletagmanager":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":true,"url":"https://convertkit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic"},"recaptcha":{"enabled":false},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}'
+                        min-width="400 500 600 700 200">
+                        <div data-style="clean" class="flex items-end mb-3">
+                            <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert">
+                            </ul>
+                            <div data-element="fields" data-stacked="false"
+                                class="flex items-center w-full max-w-md mb-3 seva-fields formkit-fields">
+                                <div class="relative w-full mr-3 formkit-field">
+                                    <label for="member_email"
+                                        class="hidden block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email
+                                        address</label>
+                                    <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                                        <svg class="w-3.5 h-3.5 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                                            <path
+                                                d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+                                            <path
+                                                d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+                                        </svg>
+                                    </div>
+                                    <input id="member_email"
+                                        class="formkit-input bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        name="email_address" aria-label="Email Address"
+                                        placeholder="Your email address..." required="" type="email" />
+                                </div>
+                                <button data-element="submit" class="formkit-submit">
+                                    <div class="formkit-spinner">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <span
+                                        class="px-5 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg cursor-pointer hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Subscribe</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+                        By subscribing, you agree with ConvertKit's <a rel="nofollow" href="#"
+                            class="text-blue-600 hover:underline dark:text-blue-500">Terms of Service</a>
+                        and <a rel="nofollow" class="text-blue-600 hover:underline dark:text-blue-500" href="#">Privacy
+                            Policy</a>
+                        .
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-8 mb-2 border-gray-200 dark:border-gray-700 lg:mt-12" lg:mb-2 />
+            <span class="flex text-right text-white bg-[#3b352f] py-4 justify-around">
+                <span class="w-[60%] ">
+                    © 2023-<span id="currentYear"></span>
+                    <a href="#">Nyay Jyoti</a>
+                    is a registered trademark. All Rights Reserved.
+                </span>
+
+
+                <div class="followUs flex gap-1">
+                    <a href="#"> <ion-icon name="logo-facebook" class="w-12 h-6"></ion-icon></a>
+                    <a href="#"> <ion-icon name="logo-instagram" class="w-12 h-6"></ion-icon></a>
+                    <a href="#"> <ion-icon name="logo-twitter" class="w-12 h-6"></ion-icon></a>
+                    <a href="#"> <ion-icon name="logo-youtube" class="w-12 h-6"></ion-icon></a>
+
+                </div>
+            </span>
+        </div>
+    </footer>
+
+
+    <!-- chatbot -->
+    <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbot">
+        <header style="height: 50px; padding: 10px 0; margin: 0;">
+            <h2>LawBot</h2>
+            <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>Hi there 👋<br>How can I help you today?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+            <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+    </div>
+</body>
+
+</html>
