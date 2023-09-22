@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #ffae00;
+    background-color: #3b352f;
     color: white;
     text-align: center;
     padding: 10px;
@@ -36,7 +36,7 @@ label, textarea, select, button {
 
 /* Style for the submit button */
 button[type="submit"] {
-    background-color: #ffae00;
+    background-color: #3b352f;
     color: white;
     border: none;
     padding: 10px;

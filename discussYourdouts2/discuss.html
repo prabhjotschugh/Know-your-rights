@@ -19,12 +19,19 @@
         <form id="message-form">
             <label for="category">Category:</label>
             <select id="category" required>
+                <option value="" disabled selected>Select category</option>
                 <option value="legal">Legal</option>
                 <option value="rights">Rights</option>
                 <option value="government">Government</option>
                 <option value="finance">Finance</option>
                 <option value="education">Education</option>
                 <!-- Add more categories as needed -->
+            </select>
+            <label for="Visibility">Visibility:</label>
+            <select id="Visibility" required>
+                <option value="" disabled selected>Select Visibility</option>
+                <option value="public">Public</option>
+                <option value="private">Private</option>
             </select>
             <textarea id="message" placeholder="Your message..." required></textarea>
             <button type="submit">Send</button>
